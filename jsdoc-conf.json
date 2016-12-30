@@ -1,0 +1,38 @@
+{
+    "opts": {
+      "template": "./node_modules/ink-docstrap/template",
+      "encoding": "utf8",
+      "destination": "./out",
+      "recurse": true,
+      "readme": "./README.md",
+      "package": "./package.json"
+    },
+    "tags": {
+        "allowUnknownTags": true,
+        "dictionaries": ["jsdoc","closure"]
+    },
+    "source": {
+        "include": [ "./app" ],
+        "includePattern": ".+\\.js(doc)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "plugins": [
+      "plugins/markdown"
+    ],
+    "templates": {
+      "cleverLinks": false,
+      "monospaceLinks": false,
+      "default": {
+          "outputSourceFiles": true
+      },
+      "systemName"      : "Datamatrix API",
+      "footer"          : "",
+      "copyright"       : "Copyright © 2016 Dieter Wimberger",
+      "navType"         : "vertical",
+      "theme"           : "cerulean",
+      "linenums"        : true,
+      "collapseSymbols" : false,
+      "inverseNav"      : true
+    },
+    "license": "MIT"
+}

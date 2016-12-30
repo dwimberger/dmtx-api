@@ -1,0 +1,5 @@
+apps:
+  - script: app/app.js
+    name: 'dmtx-api'
+    watch: true
+    node_args: '--optimize_for_size --max_old_space_size=96 --gc_interval=100'

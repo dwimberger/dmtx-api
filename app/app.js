@@ -13,5 +13,8 @@ server.post('/dmtx', handler.doDecode);
 server.get('/dmtx/:name', handler.doEncodeSimple);
 
 server.listen(SERVER_PORT, function() {
-  console.log('%s listening at %s since %j', server.name, server.url, moment().toString());
+  console.log(
+    '%s listening at %s since %j', server.name, server.url,
+    moment().toString()
+  );
 });
